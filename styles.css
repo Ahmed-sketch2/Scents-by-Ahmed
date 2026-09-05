@@ -67,3 +67,24 @@
     box-shadow: none !important;
     border: none !important;
 }
+/* Fix Story Section Text Colors to Dark */
+#story,
+#story h1, 
+#story h2, 
+#story h3, 
+#story h4, 
+#story p, 
+#story div {
+    color: #111111 !important;
+}
+
+#story .subtitle,
+#story span {
+    color: #7a0016 !important;
+    font-weight: 600 !important;
+}
+
+#story a {
+    color: #7a0016 !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid #7a0016 !important
