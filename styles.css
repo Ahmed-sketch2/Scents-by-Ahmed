@@ -9,3 +9,45 @@
     box-shadow: none !important;
     border: none !important;
 }
+/* Story Section Alignment & Mobile Responsive Fix */
+#story {
+    text-align: center !important;
+    padding: 40px 15px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+#story .story-content, 
+#story .story-grid,
+#story .story-card,
+#story .story-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+}
+
+#story img {
+    max-width: 180px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 15px auto !important;
+}
+
+#story h2, 
+#story p, 
+#story span, 
+#story div {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
