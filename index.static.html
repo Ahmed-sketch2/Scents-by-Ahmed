@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scents by Ahmed — luxury fragrances crafted to define your presence." />
+  <title>Scents by Ahmed | Luxury Fragrance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Scents by Ahmed home">
+      <img src="assets/logo.png" alt="Scents by Ahmed logo">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartBtn" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">SCENTS BY AHMED</p>
+        <h1>A scent that<br><em>defines you.</em></h1>
+        <p class="hero-text">Discover a signature collection of refined fragrances created for presence, confidence and unforgettable moments.</p>
+        <a class="gold-button" href="#collection">Explore Collection <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Luxury perfume placeholder">
+        <div class="glow"></div>
+        <div class="bottle-placeholder">
+          <span class="bottle-cap"></span>
+          <span class="bottle-neck"></span>
+          <span class="bottle-body"><small>SCENTS<br>BY AHMED</small></span>
+        </div>
+        <p>YOUR PRODUCT PHOTOGRAPH<br><span>WILL APPEAR HERE</span></p>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <span>CRAFTED WITH CHARACTER</span><i>✦</i><span>MADE TO BE REMEMBERED</span><i>✦</i><span>TIMELESS LUXURY</span>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Signature <em>scents</em></h2></div>
+        <p>Three distinctive fragrances. One unmistakable identity.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-name="Noir" data-price="49.99">
+          <div class="product-image"><span>PRODUCT<br>PHOTO</span><b>01</b></div>
+          <div class="product-info"><p class="product-type">EAU DE PARFUM</p><h3>Noir</h3><p class="notes">Dark woods · Amber · Vanilla</p><div class="product-bottom"><strong>£49.99</strong><button class="add-btn">Add to bag</button></div></div>
+        </article>
+        <article class="product-card featured" data-name="Élan" data-price="54.99">
+          <div class="product-image"><span>PRODUCT<br>PHOTO</span><b>02</b></div>
+          <div class="product-info"><p class="product-type">EAU DE PARFUM</p><h3>Élan</h3><p class="notes">Bergamot · Jasmine · Musk</p><div class="product-bottom"><strong>£54.99</strong><button class="add-btn">Add to bag</button></div></div>
+        </article>
+        <article class="product-card" data-name="Oud Royale" data-price="59.99">
+          <div class="product-image"><span>PRODUCT<br>PHOTO</span><b>03</b></div>
+          <div class="product-info"><p class="product-type">EAU DE PARFUM</p><h3>Oud Royale</h3><p class="notes">Oud · Saffron · Rosewood</p><div class="product-bottom"><strong>£59.99</strong><button class="add-btn">Add to bag</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-art"><div class="monogram">SA</div></div>
+      <div class="story-copy"><p class="eyebrow">THE HOUSE OF AHMED</p><h2>Luxury is<br><em>in the details.</em></h2><p>Scents by Ahmed is built around a simple belief: fragrance should feel personal. Every composition is designed to leave an impression without saying a word.</p><p>Our collection balances modern sophistication with timeless fragrance character — made for those who want their presence to be remembered.</p><a href="#contact" class="text-link">Discover our story <span>→</span></a></div>
+    </section>
+
+    <section class="quote-section"><div class="quote-mark">“</div><blockquote>Wear the fragrance.<br>Own the moment.</blockquote><p>SCENTS BY AHMED</p></section>
+
+    <section class="contact section" id="contact">
+      <div><p class="eyebrow">GET IN TOUCH</p><h2>Let's make it<br><em>unforgettable.</em></h2></div>
+      <form id="contactForm"><input type="text" placeholder="Your name" required><input type="email" placeholder="Email address" required><textarea placeholder="How can we help?" rows="4" required></textarea><button class="gold-button" type="submit">Send Message <span>→</span></button></form>
+    </section>
+  </main>
+
+  <footer><img src="assets/logo.png" alt="Scents by Ahmed"><p>© 2026 Scents by Ahmed. All rights reserved.</p><div><a href="#collection">Shop</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a></div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="cart-head"><h3>Your Bag</h3><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"><p class="empty">Your bag is empty.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">£0.00</strong></div><button class="gold-button checkout" id="checkoutBtn">Checkout</button></aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
