@@ -51,3 +51,19 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+/* Fix Story Section Dark Box & Blend Background */
+#story, 
+#story div, 
+#story article,
+#story section,
+.story-container, 
+.story-wrapper, 
+.story-content, 
+.story-text, 
+.story-left, 
+.story-right {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
